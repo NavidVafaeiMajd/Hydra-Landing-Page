@@ -8,6 +8,7 @@ import FancyTopic from './component/FancyTopic'
 import Description from './component/Description'
 import Cart from './component/Cart'
 import Down from './assets/icon/Down'
+import Step from './component/Step'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -124,8 +125,23 @@ function App() {
         </div>
         {/* 6th section */}
         <div>
-          
+          <Description firstTopic="HOW WE BUILD" secoundTopic="WITH HYDRA VR?">
+            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          </Description>
+          <div className='grid grid-cols-4 my-35'>
+            <Step count="01 " firstTopic="3D Conception" secoundTopic="& Design" />
+            <Step count="02 " firstTopic="Interaction" secoundTopic="Design"/>
+            <Step count="03 " firstTopic="VR World" secoundTopic="User Testing"/>
+            <Step count="04 " firstTopic="Hydra VR" secoundTopic="Deploy"/>
+
+            
+            
+          </div>
         </div>
+        
       </div>
 
     </>
