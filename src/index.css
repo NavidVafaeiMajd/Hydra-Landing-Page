@@ -52,7 +52,6 @@ h1 {
 h2 {
   font-size: 1.8em;
   line-height: 1.1;
-  font-weight: bold;
 }
 
 button {
@@ -118,4 +117,19 @@ div#ContactUs >div:not(:last-child) {
     display: flex;
     align-items: center;
     justify-content: center !important;
+  }
+
+  input,textarea{
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: .1s all ease-in-out ;
+    width: 100%;
+    margin: 15px 0;
+  }
+  input:focus,  input:focus-visible,
+  textarea:focus,  textarea:focus-visible{
+    border: none!important;
+    background-color: var(--color-primary) !important;
+    outline: none !important;
   }

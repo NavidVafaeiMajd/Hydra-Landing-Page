@@ -8,8 +8,8 @@ export default function Step({firstTopic , secoundTopic , count}) {
               </div>
               <div className='flex gap-3'>
                 <Arow1/>
-                <div className='flex flex-col gap-2'>
-                    <h2>{ firstTopic}</h2>
+                <div className='flex flex-col gap-2 font-bold'>
+                    <h2 >{ firstTopic}</h2>
                     <h2>{ secoundTopic}</h2>
                 </div>
               </div>

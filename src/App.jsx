@@ -9,6 +9,8 @@ import Description from './component/Description'
 import Cart from './component/Cart'
 import Down from './assets/icon/Down'
 import Step from './component/Step'
+import Form from './component/Form'
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -141,7 +143,8 @@ function App() {
             
           </div>
         </div>
-        
+        {/* 7th section */}
+        <Form/>
       </div>
 
     </>
