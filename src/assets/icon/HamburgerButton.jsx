@@ -1,7 +1,7 @@
-const HamburgerButton = () => {
+const HamburgerButton = ({onClick}) => {
     return (<>
 
-<svg className="md:hidden w-10" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg onClick={onClick} className="md:hidden w-10" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="33" height="3.71429" rx="1.85714" fill="url(#paint0_linear_13_83)"/>
 <rect y="22.2857" width="33" height="3.71429" rx="1.85714" fill="url(#paint1_linear_13_83)"/>
 <rect x="9" y="11.1429" width="24" height="3.71429" rx="1.85714" fill="url(#paint2_linear_13_83)"/>

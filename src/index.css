@@ -151,3 +151,6 @@ body {
   font-size: 14px !important;
 }
 }
+div#mobile-menu {
+    transition: .3s all ease-in-out;
+}
