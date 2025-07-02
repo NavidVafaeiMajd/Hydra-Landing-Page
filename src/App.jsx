@@ -11,6 +11,7 @@ import Down from './assets/icon/Down'
 import Step from './component/Step'
 import Form from './component/Form'
 import Footer from './component/Footer'
+import HeroSection from './component/HeroSection'
 
 
 
@@ -62,7 +63,7 @@ function App() {
             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
             lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </Description>
-          <div className='grid grid-cols-2 my-15'>
+          <div className='grid grid-cols-2 my-15 bg-[url(src/assets/img/Shape2.png)]  bg-right bg-no-repeat'>
             <div>
               <img className='shadow-2xl w-[75%]  rounded-[70px]! rounded-tl-[200px]! rounded-br-[200px]!' src="src/assets/img/Landing2.jpg" alt="" />
             </div>
@@ -84,7 +85,7 @@ function App() {
           </div>
         </div>
         {/* forth section */}
-        <div className='my-40'>
+        <div className='my-40 bg-[url(src/assets/img/shape3.png)] '>
           <Description firstTopic="WHY BUILD" secoundTopic="WITH HYDRA?">
             Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -115,12 +116,7 @@ function App() {
           </div>
         </div>
         {/* 5th section */}
-        <div id='fifth-sec' className='bg-opacity-30! relative mt-50'> 
-          <div>
-            <FancyTopic firstTopic="TECHNOLOGIES & HARDWARE" secoundTopic="USED BY HYDRA VR." className="text-center opacity-100!" />
-          </div>
-        </div>
-        <Down className="flex items-center justify-center -mt-8! relative z-10!" />
+        <HeroSection/>
         <div className='flex justify-between items-center'>
           <div><img className='hover:scale-125 transition delay-150 duration-300 ease-in-out' src="src\assets\img\Hydra-Tech1 1.png" alt="" /></div>
           <div><img className='hover:scale-125 transition delay-150 duration-300 ease-in-out' src="src\assets\img\Hydra-Tech2 1.png" alt="" /></div>
@@ -135,7 +131,7 @@ function App() {
             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
             lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </Description>
-          <div className='grid grid-cols-4 my-35'>
+          <div className='grid grid-cols-4 my-35 bg-[url(src/assets/img/Shape.png)] bg-contain bg-top bg-no-repeat pt-20'>
             <Step count="01 " firstTopic="3D Conception" secoundTopic="& Design" />
             <Step count="02 " firstTopic="Interaction" secoundTopic="Design"/>
             <Step count="03 " firstTopic="VR World" secoundTopic="User Testing"/>

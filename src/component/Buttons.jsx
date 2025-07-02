@@ -10,10 +10,10 @@ export const ButtonPrimary = ({content}) => {
  
   ButtonPrimary;
 
-export const ButtonSecondary = ({content}) => {
+export const ButtonSecondary = ({content ,type}) => {
     return (<>
         <div className="w-auto min-w-40 ">
-            <button className="w-auto rounded-full! bg-gradient-to-r from-primary to-secondary text-black! border-white! border-none!">
+            <button type={type} className="w-auto rounded-full! bg-gradient-to-r from-primary to-secondary text-black! border-white! border-none!">
                 {content}
             </button>
         </div>
