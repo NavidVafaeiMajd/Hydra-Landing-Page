@@ -10,6 +10,8 @@ import Cart from './component/Cart'
 import Down from './assets/icon/Down'
 import Step from './component/Step'
 import Form from './component/Form'
+import Footer from './component/Footer'
+
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto! w-full! md:p-10!">
+      <div className="container mx-auto! w-full! md:px-10! md:pt-5">
         <Header />
         {/* first section */}
         <div className='grid grid-cols-2 my-10 py-10 mt-15'>
@@ -53,7 +55,7 @@ function App() {
         {/* secound section  */}
         <ContactUs />
         {/* third Section */}
-        <div className='my-20'>
+        <div className='my-40'>
           <Description firstTopic="INTRODUCTION" secoundTopic="TO HYDRA VR">
             Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -82,14 +84,14 @@ function App() {
           </div>
         </div>
         {/* forth section */}
-        <div>
+        <div className='my-40'>
           <Description firstTopic="WHY BUILD" secoundTopic="WITH HYDRA?">
             Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
             lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </Description>
-          <div className='grid grid-cols-4 gap-5 my-25' >
+          <div className='grid grid-cols-4 gap-5 my-10' >
             <Cart title="SIMULATION" imgLink="src/assets/img/Landing5.jpg">
               Vitae sapien pellentesque habitant morbi
               nunc. Viverra aliquet  porttitor rhoncus 
@@ -113,7 +115,7 @@ function App() {
           </div>
         </div>
         {/* 5th section */}
-        <div id='fifth-sec' className='bg-opacity-30! relative'> 
+        <div id='fifth-sec' className='bg-opacity-30! relative mt-50'> 
           <div>
             <FancyTopic firstTopic="TECHNOLOGIES & HARDWARE" secoundTopic="USED BY HYDRA VR." className="text-center opacity-100!" />
           </div>
@@ -126,7 +128,7 @@ function App() {
           <div><img className='hover:scale-125 transition delay-150 duration-300 ease-in-out' src="src\assets\img\Hydra-Tech4 1.png" alt="" /></div>
         </div>
         {/* 6th section */}
-        <div>
+        <div className='my-40'>
           <Description firstTopic="HOW WE BUILD" secoundTopic="WITH HYDRA VR?">
             Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -144,7 +146,9 @@ function App() {
           </div>
         </div>
         {/* 7th section */}
-        <Form/>
+        <Form />
+        {/* 8th section */}
+        <Footer/>
       </div>
 
     </>

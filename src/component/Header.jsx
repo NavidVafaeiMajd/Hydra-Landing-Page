@@ -11,7 +11,7 @@ function Header() {
     return (
         <div className='flex items-baselinev justify-between w-full! items-center!'>
             <div className="flex items-center gap-2!">
-                <LogoIcon />
+                <LogoIcon className="w-25"/>
                 <LogoText/>
             </div>
             <div className='max-md:hidden'>

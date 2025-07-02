@@ -6,7 +6,7 @@ export default function FancyTopic({ firstTopic, secoundTopic, arowVisibility ,c
                   <h1 className={`font-bold ${className}`}>
                     {firstTopic}
                   </h1>
-                  <h1 className={`min-h-[70px] font-normal! gap-5 ${className}`}>
+                  <h1 className={`min-h-[70px] font-normal! flex gap-3 gap-5 ${className}`}>
                     {secoundTopic} {arowVisibility?<Arow2/> : ''}
                   </h1>
                 </div>
