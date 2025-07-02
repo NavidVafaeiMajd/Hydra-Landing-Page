@@ -5,11 +5,11 @@ import Icon from "./Icon"
 export default function Footer() {
     return (<>
     <div className="mt-30">
-            <div className="grid grid-cols-4 bg-linear-to-t from-back via-primary to-back gap-2">
-                <div className="bg-back">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 bg-linear-to-t from-back via-primary to-back gap-2">
+                <div className="bg-back max-md:flex justify-center">
                     <LogoIcon className="h-60"/>
                 </div>
-                <div className="bg-back flex justify-center">
+                <div className="bg-back flex justify-center max-md:p-4">
                     <ul className="flex flex-col gap-4">
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">SERVICES</a></li>
@@ -19,7 +19,7 @@ export default function Footer() {
 
                     </ul>
                 </div>
-                <div className="bg-back flex justify-center">
+                <div className="bg-back flex justify-center max-md:p-4">
                     <ul className="flex flex-col gap-4">
                         <li><a href="#">F.A.Q</a></li>
                         <li><a href="#">SITEMAP</a></li>
@@ -27,7 +27,7 @@ export default function Footer() {
                         <li><a href="#">LICENSES</a></li>
                     </ul>
                 </div>
-                <div className="bg-back flex flex-col justify-between pl-10">
+                <div className="bg-back flex flex-col justify-between pl-10 max-md:p-4 max-md:gap-10">
                     <div><p>SOCIALIZE WITH HYDRA</p></div>
                     <div>
                         <Icon/>

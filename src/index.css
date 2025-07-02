@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+
 :root{
   --color-primary : #8176AF;
   --color-secondary : #C0B7E8;
@@ -47,7 +48,7 @@ body {
 
 h1 {
   font-size: 2.5em;
-  line-height: 1.5;
+  line-height: 1.9;
 }
 h2 {
   font-size: 1.8em;
@@ -90,7 +91,7 @@ div#ContactUs >div:not(:last-child) {
   align-items: center;
   justify-content: center;
   padding: 25px;
-  border-radius: 10%;
+  border-radius: 40px;
   gap: 20px;
 }
 #form{
@@ -130,6 +131,7 @@ div#ContactUs >div:not(:last-child) {
     transition: .1s all ease-in-out ;
     width: 100%;
     margin: 15px 0;
+    font-size: 13px;
   }
   input:focus,  input:focus-visible,
   textarea:focus,  textarea:focus-visible{
@@ -137,3 +139,15 @@ div#ContactUs >div:not(:last-child) {
     background-color: var(--color-primary) !important;
     outline: none !important;
   }
+@media screen and (max-width: 480px) {
+h1{
+  font-size: 1.75em !important;
+}
+h2{
+    font-size: 1em !important;
+
+}
+body {
+  font-size: 14px !important;
+}
+}

@@ -24,11 +24,11 @@ const HeroSection = () => {
 
     return (
       <>
-      <section className="relative overflow-hidden rounded-[100px] bg-[#2d2540] text-white text-center min-h-60">
-        <div className='absolute bg-back/70 w-[100%] h-[100%]'>
-                <div className="p-8 absolute top-[20%] left-[23%]">
-                    <h1 className="text-2xl font-bold">TECHNOLOGIES & HARDWARE</h1>
-                    <h1 className="text-lg">USED BY HYDRA VR.</h1>
+      <section className="relative overflow-hidden rounded-[100px] bg-[url(src/assets/img/Landing6.jpg)] bg-cover bg-top text-white text-center lg:min-h-60 mt-30">
+        <div className='lg:absolute bg-back/70 w-[100%] h-[100%]! '>
+                <div className="p-8 lg:absolute -top-[5%] md:top-[20%] left-[22%] md:left-[23%]">
+                    <h1 className=" max-lg:text-[16px]! font-bold">TECHNOLOGIES & HARDWARE</h1>
+                    <h1 className="text-[16px]! ">USED BY HYDRA VR.</h1>
               </div>
               <div className='absolute mt-100'>
                   <p>
@@ -41,19 +41,18 @@ const HeroSection = () => {
           </div>
       <div
         ref={cardRef}
-        className="overflow-hidden"
-        style={{ height: 250 }}
+        className="max-lg:hidden overflow-hidden "
       >
         <img
           src="src/assets/img/Landing6.jpg"
           alt="Full"
-          className="w-full"
+          className="w-full  max-lg:hidden"
         />
       </div>
     </section>
                 <button
                     onClick={toggleCard}
-                className="mx-auto relative z-10 py-5! -mt-10 flex items-center justify-center bg-primary border border-10 border-black/70 rounded-full!"
+                className="max-lg:hidden mx-auto relative z-10 py-5! -mt-10 flex items-center justify-center bg-primary border border-10 border-black/70 rounded-full!"
                 >
                     <span className="text-xl rounded-full text-back">{isOpen ? '▲' : '▼'}</span>
                 </button>

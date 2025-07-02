@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import HamburgerButton from '../assets/icon/HamburgerButton';
 import LogoIcon from '../assets/icon/Logo-Icon';
 import LogoText from '../assets/icon/Logo-text';
 import { ButtonPrimary, ButtonSecondary } from './Buttons';
@@ -14,7 +15,7 @@ function Header() {
                 <LogoIcon className="w-25"/>
                 <LogoText/>
             </div>
-            <div className='max-md:hidden'>
+            <div className='max-lg:hidden'>
                 <ul className='flex gap-10'>
                     <li><a href="#"> ABOUT </a></li>
                     <li><a href="#"> SERVICES</a></li>
@@ -22,7 +23,8 @@ function Header() {
                     <li><a href="#">HOW TO</a></li>
                 </ul>
             </div>
-            <div className='flex gap-5'>
+            <HamburgerButton/>
+            <div className='flex gap-5 max-md:hidden'>
                 <ButtonPrimary content="CONTACT US" />
                 <ButtonSecondary content="JOIN HYDRA"/>
             </div>
