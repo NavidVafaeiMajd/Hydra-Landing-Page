@@ -154,3 +154,11 @@ body {
 div#mobile-menu {
     transition: .3s all ease-in-out;
 }
+.swiper-button-prev:after, .swiper-button-next:after {
+    background: var(--color-primary);
+    opacity: .8;
+    color: white;
+    font-size: medium !important;
+    padding: 4px 8px;
+    border-radius: 30px;
+}

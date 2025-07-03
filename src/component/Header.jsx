@@ -8,12 +8,12 @@ import { RxCross1 } from "react-icons/rx";
 // import '../assets'
 
 function Header() {
-    const [rightval, setright] = useState(1000);
-    const [neg, setneg] = useState("-");
+    const [rightval, setright] = useState("1000");
+    // const [neg, setneg] = useState("");
 
     function handlerHamburger() {
         setright(0);
-        setneg("")
+        // setneg("")
     }
     return (<>
         <div className='flex items-baselinev justify-between w-full! items-center! py-5'>
@@ -35,10 +35,10 @@ function Header() {
                 <ButtonSecondary content="JOIN HYDRA"/>
             </div>
         </div>
-        <div id="mobile-menu" className={`md:hidden py-5 fixed ${neg}right-${rightval} top-0 h-full w-full bg-darker z-50 flex flex-col justify-between items-center`} >
+        <div id="mobile-menu" className={`gap-5 md:hidden py-5 fixed left-${rightval}! top-0 h-full w-full bg-darker z-50 flex flex-col justify-between items-center`} >
             <RxCross1 className='w-10 h-10 text-right! ' onClick={() => {
                 setright(1000);
-                setneg("-")
+                // setneg("-");
             }}/>
             <div className=''>
                 <ul className='flex flex-col items-center gap-10'>
